@@ -82,11 +82,10 @@ export default {
 </script>
 
 <style>
-.input-box {
-    width: 250px;
-    height: 60px;
-}
 
+.input-box {
+    position: relative;
+}
 
 
 .from-input {
@@ -109,11 +108,11 @@ export default {
     height: 250px;
     border: 1px solid #223b61;
     border-radius: 2px;
-    position: relative;
+    position: absolute;
     background-color: #fff;
     z-index: 1;
-    top: 15px;
-    left: -5px;
+    left: 50%;
+    transform: translate(-50%, 0);
     box-shadow: 0 0 3px #223b61;
 }
 
@@ -149,4 +148,27 @@ export default {
     padding: 0 10px;
     margin-right: 10px;
 }
+
+@media (max-width: 400px) {
+    .from-input {
+        width: 200px;
+        height: 40px;
+        border: 1px solid #aaa;
+        text-align: left;
+        padding: 5px;
+        box-sizing: border-box;
+    }
+
+    .tab-text {
+        width: 180px;
+        height: 16px;
+        font-size: 10px;
+    }
+
+    .city-box {
+        width: 300px;
+        height: 250px;
+    }
+}
+
 </style>

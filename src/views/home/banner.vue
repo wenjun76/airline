@@ -129,7 +129,6 @@ export default {
 
 .flightsearch {
     width: 1000px;
-    height: 300px;
     border: 1px solid #000;
     background-color: #fff;
     margin: 400px auto;
@@ -162,4 +161,34 @@ export default {
     display: flex;
     justify-content: center;
 }
+
+@media (max-width: 400px) {
+
+    .banner {
+        height: 200px;
+    }
+
+    .tab-input {
+        flex-wrap: wrap;
+        margin: 0px 0;
+    }
+
+    .tab-input>div {
+        margin: 10px 0;
+    }
+
+    .flightsearch {
+        width: 300px;
+        margin: 120px auto;
+    }
+    
+    .search-bt {
+        width: 200px;
+        height: 30px;
+        font-size: 10px;
+    }
+
+
+}
+
 </style>

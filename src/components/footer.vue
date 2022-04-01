@@ -144,4 +144,23 @@ export default {
     .footer-content-bottom span {
         font-size: 14px;
     }
+
+    @media (max-width: 400px) {
+        .footer {
+            height: 250px;
+        }
+
+        .footer-content {
+            width: 100%;
+            padding: 10px 0 5px 0;
+        }
+
+        .footer-content-top {
+            padding: 0 20px;
+        }
+
+        .footer-content-bottom>span {
+            font-size: 10px;
+        }
+    }
 </style>

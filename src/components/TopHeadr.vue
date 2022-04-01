@@ -7,19 +7,19 @@
             <li>购票</li>
             <li v-if="$store.state.userstate">
                 <div class="top-box-user" @mouseover="mouseOver" @mouseleave="mouseOut">
-                    <a href="">
+                    <a href="JavaScript:;">
                         {{userinfo.user_name}}
                     </a>
                     <div class="top-box-user-menu"  v-show="acitve">
                         <ul>
-                            <li>用户中心</li>
-                            <li @click="cancellation">注销</li>
+                            <li><a href="user">用户中心</a> </li>
+                            <li @click="cancellation"><a href="JavaScript:;">注销</a></li>
                         </ul>
                     </div>
                 </div>
             </li>
             <li v-else>
-                <a href="login">登录</a>
+                <a href="login">登录/</a>
                 <a href="register">注册</a>
             </li>
         </ul>
@@ -124,9 +124,14 @@ export default {
     left: -60%;
 }
 
-
-.top-box-user-menu>ul>li:hover {
+.top-box-user-menu>ul>li>a {
     color: #000;
+}
+
+
+.top-box-user-menu>ul>li:hover,
+.top-box-user-menu>ul>li:hover a {
+    color: #fff;
     background-color: #223b61;
 }
 

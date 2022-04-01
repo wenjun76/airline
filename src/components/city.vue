@@ -37,7 +37,8 @@ export default {
 
 </script>
 
-<style>
+<style scoped>
+
 .city-box {
     width: 400px;
     height: 250px;
@@ -83,4 +84,12 @@ export default {
     padding: 0 10px;
     margin-right: 10px;
 }
+
+@media (max-width: 400px) {
+
+    .city-box {
+        display: block;
+    }
+}
+
 </style>
