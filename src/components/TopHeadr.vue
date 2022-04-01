@@ -124,9 +124,6 @@ export default {
     left: -60%;
 }
 
-.top-box-user-menu>ul>li {
-
-}
 
 .top-box-user-menu>ul>li:hover {
     color: #000;
